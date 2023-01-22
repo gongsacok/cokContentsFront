@@ -12,7 +12,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v1
         with:
-          python-version: "3.x"
+          python-version: "3.11"
       - name: Install AWS CLI
         run: pip3 install awscli --upgrade --user
       - name: Configure AWS Credentials
