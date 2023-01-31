@@ -2,14 +2,16 @@ import { Routes, Route } from "react-router-dom";
 
 /*  */
 import Home from "./screens/Home";
-import EventList from "./screens/EventList";
+import ListEvent from "./screens/ListEvent";
+import ListBanner from "./screens/ListBanner";
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/eventlist" element={<EventList />} />
+        <Route path="/event" element={<ListEvent />} />
+        <Route path="/banner" element={<ListBanner />} />
       </Routes>
     </div>
   );

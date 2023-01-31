@@ -4,7 +4,8 @@ export default function Home() {
     <div>
       HOME!!
       <div>
-        <Link to="/eventlist">Event list</Link>
+        <Link to="/event">Event list</Link>
+        <Link to="/banner">banner list</Link>
       </div>
     </div>
   );
