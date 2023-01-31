@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div>
-      HOME!!
+      <h1>공사콕 콘텐츠 메인 페이지</h1>
       <div>
-        <Link to="/event">Event list</Link>
-        <Link to="/banner">banner list</Link>
+        <Link to="/event">이벤트 리스트</Link>
+      </div>
+      <div>
+        <Link to="/banner">공사콕 앱배너 리스트</Link>
       </div>
     </div>
   );
