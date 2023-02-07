@@ -1,11 +1,223 @@
-h1 {
-  height: 40px;
-  font-size: 20px;
+:root {
+  --color_purple_basic: #b53bfd;
+  --color_purple_light: #e8deea;
+  --color_blue_basic: #6587f4;
+  --color_orange_basic: #f17528;
+  --color_green_basic: #4a963c;
+  --color_black_basic: #333333;
+  --color_white_basic: #fff;
 }
-a {
-  padding: 2px 4px;
-  margin: 2px;
+
+.color_purple_text {
+  color: var(--color_purple_basic);
 }
-div {
-  padding: 4px 0;
+
+/*  header -------------------------------------------- */
+
+header {
+  width: 90%;
+  display: flex;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 0;
+  transition: all 500ms ease-in;
+}
+header img {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+header div {
+  width: 100%;
+  height: auto;
+  margin-left: 12px;
+}
+header h2 {
+  padding-bottom: 6px;
+}
+
+/*  eventprice page -------------------------------------------- */
+
+.commonContainer {
+  width: 100%;
+  height: auto;
+  background-color: var(--color_purple_light);
+}
+.priceWrap {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.pricePiece {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 120px;
+  background-color: var(--color_white_basic);
+  border-radius: 15px;
+  font-family: "OSeongandHanEum";
+  margin: 20px 0;
+  transition: all 500ms ease-in;
+}
+.pricePiece > img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 14px 0 0 10px;
+  transition: all 500ms ease-in;
+}
+.pricePiece > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  padding: 30px 6px;
+}
+.pricePiece > div > span {
+  display: block;
+  font-size: 14px;
+  padding: 6px 0;
+  transition: all 500ms ease-in;
+}
+.pricePiece > div i {
+  width: auto;
+  height: 100%;
+  display: inline-block;
+  padding: 0 6px;
+}
+.pricePiece svg {
+  height: 12px;
+  width: 12px;
+  padding: 0 8px;
+}
+.cancleText {
+  position: relative;
+  padding: 0 2px;
+}
+.cancleText span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: 50%;
+  margin: 0 auto;
+  width: 100%;
+  height: 2px;
+}
+
+.pricePiece > i:last-child {
+  position: absolute;
+  display: block;
+  right: -15px;
+  top: 50%;
+  bottom: 50%;
+  margin: auto 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--color_orange_basic);
+  font-size: 12px;
+  text-align: center;
+  line-height: 35px;
+  color: var(--color_white_basic);
+}
+
+.buttonWrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.buttonWrap button {
+  display: inline-block;
+  width: auto;
+  min-width: 110px;
+  height: auto;
+  padding: 8px 14px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.buttonWrap button:last-child {
+  margin-right: 0;
+}
+
+/* mob size ============================================================= */
+@media screen and (max-width: 599px) {
+  header {
+    max-width: 350px;
+  }
+  /*  eventprice page -------------------------------------------- */
+  .priceWrap {
+    max-width: 350px;
+  }
+}
+
+/* tab, pc size ============================================================= */
+@media screen and (min-width: 600px) {
+  header {
+    width: 550px;
+  }
+  header img {
+    width: 30px;
+    height: 30px;
+  }
+  header span,
+  header h2 {
+    font-size: 20px;
+    padding-bottom: 6px;
+  }
+  /*  eventprice page -------------------------------------------- */
+  .priceWrap {
+    width: 550px;
+  }
+  .pricePiece {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 180px;
+    background-color: var(--color_white_basic);
+    border-radius: 15px;
+    font-family: "OSeongandHanEum";
+    margin: 20px 0;
+  }
+  .pricePiece > img {
+    width: 150px;
+    height: 150px;
+    margin: 20px 20px 0;
+  }
+  .pricePiece > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 180px);
+    height: 100%;
+    padding: 30px 10px;
+  }
+  .pricePiece > div > span {
+    display: block;
+    font-size: 20px;
+    padding: 14px 0;
+  }
+
+  .pricePiece svg {
+    height: 15px;
+    width: 15px;
+    padding: 0 8px;
+  }
+  .pricePiece > i:last-child {
+    right: -22px;
+    width: 45px;
+    height: 45px;
+    font-size: 14px;
+    line-height: 45px;
+  }
+
+  .buttonWrap button {
+    min-width: 110px;
+    margin-right: 25px;
+    font-size: 20px;
+  }
 }
