@@ -108,9 +108,11 @@ export default function EventPrice() {
         </ul>
       </div>
       <div className="buttonWrap">
-        <button style={{ borderColor: "#b53bfd" }} onClick={onTelClick}>
+        <a style={{ borderColor: "#b53bfd" }} href="tel:1577-7942">
           1577-7942
-        </button>
+        </a>
+        {/* <button style={{ borderColor: "#b53bfd" }} onClick={onTelClick}>
+        </button> */}
         <button style={{ borderColor: "#4a963c" }} onClick={onAnchorClick}>
           신청하기
         </button>
