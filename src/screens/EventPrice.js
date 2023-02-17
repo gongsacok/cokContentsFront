@@ -1,9 +1,4 @@
 export default function EventPrice() {
-  const onTelClick = (e) => {
-    e.preventDefault();
-    window.location.href = "tel:1577-7942";
-  };
-
   const onAnchorClick = (e) => {
     e.preventDefault();
     window.location.href = "https://contents.gongsacok.com";
@@ -111,8 +106,6 @@ export default function EventPrice() {
         <a style={{ borderColor: "#b53bfd" }} href="tel:1577-7942">
           1577-7942
         </a>
-        {/* <button style={{ borderColor: "#b53bfd" }} onClick={onTelClick}>
-        </button> */}
         <button style={{ borderColor: "#4a963c" }} onClick={onAnchorClick}>
           신청하기
         </button>
