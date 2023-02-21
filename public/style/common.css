@@ -90,6 +90,7 @@ header div {
   display: block;
   text-align: center;
   font-family: "Pretendard-Medium";
+
   color: var(--color_gray_basic);
 }
 
@@ -102,7 +103,7 @@ header div {
 }
 .iconWrap-textPart span {
   font-size: 18px;
-  font-family: "Pretendard-Bold";
+  font-family: "Pretendard-SemiBold";
 }
 
 /* component : EventPrice */
