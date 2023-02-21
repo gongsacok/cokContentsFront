@@ -6,6 +6,7 @@
   --color_green_basic: #4a963c;
   --color_black_basic: #333333;
   --color_white_basic: #fff;
+  --color_gray_basic: #666;
 }
 
 .color_purple_text {
@@ -19,21 +20,26 @@ header {
   display: flex;
   height: auto;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 10px 0;
   transition: all 500ms ease-in;
 }
 header img {
   display: block;
   width: 25px;
-  height: 25px;
+  height: auto;
 }
 header div {
-  width: 100%;
+  width: auto;
   height: auto;
-  margin-left: 12px;
+  margin-left: 10px;
 }
-header h2 {
-  padding-bottom: 6px;
+
+.centerWrap {
+  display: flex;
+  justify-content: center;
+}
+.centerWrap div {
+  margin-left: 5px;
 }
 
 /*  eventprice page -------------------------------------------- */
@@ -41,21 +47,71 @@ header h2 {
 .commonContainer {
   width: 100%;
   height: auto;
-  background-color: var(--color_purple_light);
 }
-.priceWrap {
-  width: 92%;
+.commonContainer ul {
+  width: 90%;
   height: auto;
   margin: 0 auto;
 }
+.commonContainer li {
+  width: 100%;
+  border-radius: 15px;
+  margin: 10px 0;
+}
+.contntsPiece {
+  height: auto;
+  border: 2px solid black;
+}
+.thinContntsPiece {
+  height: auto;
+  border: 1px solid black;
+}
+.contntsPiece img,
+.thinContntsPiece img {
+  width: 100%;
+}
 
+.iconWrap {
+  display: flex;
+  padding: 10px 0;
+}
+.iconWrap-iconPart {
+  width: 45%;
+}
+.iconWrap-iconPart img {
+  width: 50px;
+  height: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+}
+.iconWrap-iconPart > span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-family: "Pretendard-Medium";
+  color: var(--color_gray_basic);
+}
+
+.iconWrap-textPart {
+  width: 55%;
+}
+.iconWrap-textPart > span {
+  display: block;
+  padding: 5px;
+}
+.iconWrap-textPart span {
+  font-size: 18px;
+  font-family: "Pretendard-Bold";
+}
+
+/* component : EventPrice */
+/* 이벤트 가격 */
 .pricePiece {
   position: relative;
   display: flex;
-  width: 100%;
   height: 120px;
   background-color: var(--color_white_basic);
-  border-radius: 15px;
   font-family: "OSeongandHanEum";
   margin: 20px 0;
   transition: all 500ms ease-in;
@@ -123,6 +179,8 @@ header h2 {
   color: var(--color_white_basic);
 }
 
+/* ============================================================= */
+/* component : common */
 .buttonWrap {
   display: flex;
   justify-content: center;
@@ -143,6 +201,15 @@ header h2 {
   text-align: center;
 }
 
+.contentsWrap button,
+.contentsWrap a {
+  border: 4px solid black;
+  padding: 4px 25px;
+}
+.centerClass {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
 /* mob size ============================================================= */
 @media screen and (max-width: 599px) {
   header {
@@ -166,11 +233,13 @@ header h2 {
   header span,
   header h2 {
     font-size: 20px;
-    padding-bottom: 6px;
   }
   /*  eventprice page -------------------------------------------- */
-  .priceWrap {
+  .commonContainer ul {
     width: 550px;
+  }
+  .iconWrap {
+    padding: 20px 0;
   }
   .pricePiece {
     position: relative;
