@@ -26,7 +26,7 @@ header {
 header img {
   display: block;
   width: 25px;
-  height: auto;
+  height: 25px;
 }
 header div {
   width: auto;
@@ -76,7 +76,7 @@ header div {
   padding: 10px 0;
 }
 .iconWrap-iconPart {
-  width: 45%;
+  width: 40%;
 }
 .iconWrap-iconPart img {
   width: 50px;
@@ -94,7 +94,7 @@ header div {
 }
 
 .iconWrap-textPart {
-  width: 55%;
+  width: 60%;
 }
 .iconWrap-textPart > span {
   display: block;

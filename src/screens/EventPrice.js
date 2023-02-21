@@ -19,7 +19,7 @@ export default function EventPrice() {
           </span>
         </div>
       </header>
-      <div className="commonContainer">
+      <div className="commonContainer" style={{ backgroundColor: "#e8deea" }}>
         <ul className="priceWrap">
           <li className="pricePiece">
             <img
@@ -80,7 +80,7 @@ export default function EventPrice() {
             <i>선택3</i>
           </li>
 
-          <li className="pricePiece" style={{ backgroundColor: "#e8deea" }}>
+          <li className="pricePiece">
             <img
               src="../assets/imgs/event_img4.png"
               alt="홈페이지+동영상+블로그포스팅"
