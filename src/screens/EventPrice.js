@@ -9,7 +9,7 @@ export default function EventPrice() {
       <header>
         <img src="../assets/imgs/event_icon.png" alt="이벤트 로고" />
         <div>
-          <h2>
+          <h2 style={{ paddingBottom: "6px" }}>
             <span className="color_purple_text">와짱 </span>이벤트
             <span className="color_purple_text"> event</span>
           </h2>
@@ -80,7 +80,7 @@ export default function EventPrice() {
             <i>선택3</i>
           </li>
 
-          <li className="pricePiece">
+          <li className="pricePiece" style={{ backgroundColor: "#e8deea" }}>
             <img
               src="../assets/imgs/event_img4.png"
               alt="홈페이지+동영상+블로그포스팅"
