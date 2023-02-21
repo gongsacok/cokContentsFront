@@ -1,15 +1,22 @@
 @font-face {
   font-family: "Pretendard-Bold";
-  src: url("../assets/fonts/pretendard-Bold.otf");
+  /* src: url("../assets/fonts/pretendard-Bold.otf"); */
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
 }
 @font-face {
   font-family: "Pretendard-SemiBold";
-  src: url("../assets/fonts/Pretendard-SemiBold.otf");
+  /* src: url("../assets/fonts/Pretendard-SemiBold.otf"); */
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+    format("woff");
 }
 @font-face {
   font-family: "Pretendard-Medium";
-  src: url("../assets/fonts/pretendard-Medium.otf");
+  /* src: url("../assets/fonts/pretendard-Medium.otf"); */
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff")
+    format("woff");
 }
+
 @font-face {
   font-family: "OSeongandHanEum";
   src: url("../assets/fonts/OSeongandHanEum-Bold.otf");
@@ -24,8 +31,9 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: "apple GD", "Pretendard-SemiBold", "OSeongandHanEum",
-    "noto sans KR", "noto sans KR", sans-serif;
+  font-family: "apple GD", "Pretendard-Medium", "Pretendard-SemiBold",
+    "Pretendard-Medium", "OSeongandHanEum", "noto sans KR", "noto sans KR",
+    sans-serif;
   letter-spacing: 1.1px;
   font-weight: 900;
 }
