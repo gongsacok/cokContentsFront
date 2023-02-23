@@ -252,6 +252,9 @@ header div {
   header h2 {
     font-size: 20px;
   }
+  header h2 {
+    font-family: "Pretendard-Bold";
+  }
   /*  eventprice page -------------------------------------------- */
   .commonContainer ul {
     width: 550px;
