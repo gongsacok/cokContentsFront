@@ -9,7 +9,7 @@ export default function B2c2() {
       <header className="centerWrap">
         <img
           src="../assets/imgs/banner_b2c3_img4.png"
-          alt="온라인 업체등록 하는 방법"
+          alt="서류 아이콘"
           style={{ height: "25px", marginTop: "3px" }}
         />
         <div>
@@ -21,20 +21,17 @@ export default function B2c2() {
           <li className="thinContntsPiece">
             <img
               src="../assets/imgs/banner_b2c3_img1.png"
-              alt="공사장 일러스트"
+              alt="건축시공에 대해 고민하는 일러스트"
               style={{ borderRadius: "15px" }}
             />
           </li>
           <li className="thinContntsPiece">
             <div className="iconWrap">
               <div className="iconWrap-iconPart">
-                <img
-                  src="../assets/imgs/banner_b2c3_img2.png"
-                  alt="공사장 일러스트"
-                />
+                <img src="../assets/imgs/banner_b2c3_img2.png" alt="견적공유" />
                 <span>견적 공유</span>
               </div>
-              <div className="iconWrap-textPart">
+              <div className="iconWrap-textPart iconWrap-textPart-smallSize">
                 <span>
                   사용자 고객은{" "}
                   <span className="color_green_text">견적의뢰서 작성 시</span>
@@ -63,11 +60,11 @@ export default function B2c2() {
               <div className="iconWrap-iconPart">
                 <img
                   src="../assets/imgs/banner_b2c3_img3.png"
-                  alt="공사장 일러스트"
+                  alt=">내 견적서"
                 />
                 <span>내 견적서</span>
               </div>
-              <div className="iconWrap-textPart">
+              <div className="iconWrap-textPart  iconWrap-textPart-smallSize">
                 <span>
                   <span className="color_red_text">견적서 도착 현황</span> 및
                 </span>
