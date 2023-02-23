@@ -83,6 +83,9 @@ header div {
 }
 .iconWrap-iconPart {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .iconWrap-iconPart img {
   width: 50px;
