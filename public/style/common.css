@@ -12,7 +12,13 @@
 .color_purple_text {
   color: var(--color_purple_basic);
 }
+.color_green_text {
+  color: #0ea88a;
+}
 
+.color_red_text {
+  color: #ff5c5c;
+}
 /*  header -------------------------------------------- */
 
 header {
@@ -103,7 +109,18 @@ header div {
 }
 .iconWrap-textPart span {
   font-size: 18px;
-  font-family: "Pretendard-SemiBold";
+  font-family: "Pretendard-Bold";
+}
+.iconWrap-textPart div {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  margin: 0 2px;
+}
+.iconWrap-textPart img {
+  position: absolute;
+  display: block;
+  top: -9px;
 }
 
 /* component : EventPrice */
