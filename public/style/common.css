@@ -402,14 +402,15 @@ header div {
   background-position: bottom;
   background-repeat: no-repeat;
   opacity: 0.2;
-  clip: rect(0px, 100vw, 70vh, 0px);
 }
 .visualContainer {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   z-index: 1;
   width: 100%;
   height: 100%;
-  padding-top: 100px;
 }
 .visualBox_coklogo {
   width: 131px;
@@ -418,7 +419,8 @@ header div {
 }
 .visualBox_moblie {
   display: block;
-  width: 314px;
+  width: 95%;
+  max-width: 314px;
   height: auto;
   margin-bottom: 35px;
   margin-left: 50%;
@@ -454,9 +456,6 @@ button > img {
 }
 /* mob size ============================================================= */
 @media screen and (min-width: 430px) and (max-width: 833px) {
-  .visualContainer {
-    padding-top: 20%;
-  }
   .visualBox_coklogo {
     width: 194px;
   }
@@ -472,9 +471,6 @@ button > img {
 
 /* tab, pc size ============================================================= */
 @media screen and (min-width: 834px) {
-  .visualContainer {
-    padding-top: 180px;
-  }
   .visualBox_coklogo {
     width: 194px;
   }
@@ -584,7 +580,10 @@ button > img {
 /* tab, pc size ============================================================= */
 @media screen and (min-width: 720px) and (max-width: 1279px) {
   .userMentionContainer {
-    padding-top: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0;
   }
   .userMentionContainer > img {
     display: block;
@@ -605,7 +604,10 @@ button > img {
 
 @media screen and (min-width: 1280px) {
   .userMentionContainer {
-    padding-top: 4%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .userMentionBox .font_content1 {
     display: flex;
