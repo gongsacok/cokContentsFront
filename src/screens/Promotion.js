@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import VisualBox from "../common/component/PromotionVisualBox";
 import UserMentionBox from "../common/component/PromotionUserMentionBox";
 
