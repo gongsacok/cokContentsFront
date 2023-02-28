@@ -9,6 +9,9 @@ export default function Home() {
       <div>
         <Link to="/banner">공사콕 앱배너 리스트</Link>
       </div>
+      <div>
+        <Link to="/promotion">공사콕 프로모션 페이지</Link>
+      </div>
     </div>
   );
 }

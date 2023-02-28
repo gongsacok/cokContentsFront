@@ -15,6 +15,8 @@ import B2c3 from "./screens/B2c3";
 import Event from "./screens/Event";
 import EventPrice from "./screens/EventPrice";
 
+import Promotion from "./screens/Promotion";
+
 function App() {
   return (
     <div className="App">
@@ -29,6 +31,7 @@ function App() {
         <Route path="/banner/b2b2" element={<B2b2 />} />
         <Route path="/banner/b2c2" element={<B2c2 />} />
         <Route path="/banner/b2c3" element={<B2c3 />} />
+        <Route path="/promotion" element={<Promotion />} />
       </Routes>
     </div>
   );
