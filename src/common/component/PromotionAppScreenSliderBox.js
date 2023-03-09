@@ -1,13 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
-import { useState } from "react";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default function PromotionAppScreenSliderBox() {
-  const [data, setData] = useState([
+  const data = [
     {
       link: "../assets/imgs/promotion_appScreen_slide1.jpg",
       text: "견적의뢰서 작성",
@@ -28,7 +27,7 @@ export default function PromotionAppScreenSliderBox() {
       link: "../assets/imgs/promotion_appScreen_slide5.gif",
       text: "위치기반 업체 추천",
     },
-  ]);
+  ];
 
   SwiperCore.use([Navigation, Pagination, Autoplay]);
 
